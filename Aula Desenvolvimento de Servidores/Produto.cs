@@ -23,9 +23,37 @@ namespace Aula_Desenvolvimento_de_Servidores
         {
             return Descricao;
         }
+
+        public void setDescricao(string descricao)
+        {
+            if(descricao != "")
+            {
+                Descricao = descricao;
+            }
+        }
         public decimal getValor()
         {
             return Valor;
+        }
+
+        public void setValor(decimal valor)
+        {
+            if(valor > 0)
+            {
+                Valor = valor;
+            }
+        }
+        public int getId()
+        {
+            return Id;
+        }
+
+        public void setId(int id)
+        {
+            if (id > 0)
+            {
+                Id = id;
+            }
         }
         
     }
