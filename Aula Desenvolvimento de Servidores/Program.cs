@@ -8,3 +8,4 @@ Console.WriteLine(p1.getDescricao() + " " + p1.getValor() );
 
 Pessoa p2= new Pessoa(3,"Guilherme Henrique Duarte", "(16)99876542");
 Console.WriteLine(p2.getId() + p2.getNome() + " " + p2.getTelefone() );
+
