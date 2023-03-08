@@ -18,5 +18,16 @@ namespace Aula_Desenvolvimento_de_Servidores
             Descricao = descricao;
             Valor = valor;
         }
+
+        public string getDescricao()
+        {
+            return Descricao;
+        }
+        public decimal getValor()
+        {
+            return Valor;
+        }
+        
     }
 }
+
