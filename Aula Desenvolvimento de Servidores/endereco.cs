@@ -24,6 +24,15 @@ namespace ConsoleApp_Manha
             Cidade = cidade;
             Estado = estado;
         }
+        public string getEnderecoCompleto()
+        {
+            return Rua + " " + Numero + " " + CEP  + " " + Bairro + " " + Cidade + " " + Estado;
+        }
+
+        public string getEnderecoCurto()
+        {
+            return Rua + " " + Numero;
+        }
         public void setRua(string rua)
         {
             Rua = rua;

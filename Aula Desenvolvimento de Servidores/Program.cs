@@ -14,11 +14,35 @@ using System.Security.Cryptography;
 
 Endereco e1 = new Endereco("maria mizari", "91", "13544778","sobral", "taquaritinga", "Sp");
 
-cliente c2 = new cliente(1, "Guilherme", "9767570", e1);
-cliente c3 = new cliente(2, "Eduardo", "9767570", e1);
-cliente c4 = new cliente(3, "Renata", "9767570", e1);
-cliente c5 = new cliente(4, "Augusto", "9767570", e1);
+cliente c1 = new cliente(1, "Guilherme", "9767570", e1);
+cliente c2 = new cliente(2, "Eduardo", "9767570", e1);
+cliente c3 = new cliente(3, "Renata", "9767570", e1);
+cliente c4 = new cliente(4, "Augusto", "9767570", e1);
 
-Console.WriteLine(c2.getEndereco().getRua());
-c2.getEndereco().setRua("Prudente de Moraes");
+Console.WriteLine(c1.getEndereco().getRua());
+c1.getEndereco().setRua("Prudente de Moraes");
+Console.WriteLine(c1.getEndereco().getRua());
+Console.WriteLine(c1.getEndereco().getEnderecoCompleto());
+
+
+Carro car = new Carro();
+car.Marca = "VW";
+car.numeroPortas = 4;
+car.numeroRodas = 4;
+car.cor = "Vermelho";
+car.PagaImposto = true;
+
+aviao aviao = new aviao();
+aviao.portasInternas = 10;
+aviao.numeroPortas = 8;
+aviao.numeroRodas = 2;
+aviao.cor = "branco";
+aviao.quantidadeAcentos = 500;
+aviao.PagaImposto = false;
+
+Bike bicicleta = new Bike();
+bicicleta.PagaImposto = false;
+
+Console.WriteLine(aviao.ExibirDados());
+Console.WriteLine(car.ExibirDados());
 
